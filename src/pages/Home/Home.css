@@ -1,0 +1,48 @@
+.hero-page{
+    background: url("src/assets/b3.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-text{
+    min-height: 90vh;
+    background-color: hsla(0, 0%, 0%, 0.20);
+}
+.search-input{
+    margin-top: 2rem;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #9CC4B2;
+    border-radius: 2rem;
+    padding: 15px;
+    width: 300px;
+    
+}
+.search-input:focus{
+    outline: none;
+    border: 2px solid #9CC4B2;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(156, 196, 178, 0.5);
+    background-color: aliceblue;
+    color: black;
+}
+.search_button{
+    background-color: #9CC4B2;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    right: 70px;
+}
+.search_button:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(156, 196, 178, 0.5);
+    transform: scale(0.95);
+    transition: 0.3s ease-in-out;
+}
