@@ -1,0 +1,104 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #877CB0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #E0E0E0;
+}
+.dropdown{
+    font-size: 18px;
+    font-weight: bold;
+    color: #E0E0E0;
+    border: none;
+}
+.dropdown:hover{
+    color: #fff;
+}
+.dropdown select {
+    padding: 8px 18px;
+    appearance: none;
+  }
+  
+  .dropdown select:focus {
+    outline: none;
+  }
+  .dropdown select option {
+    background-color: #1A1A1A;
+    color: #ffffff; 
+  }
+.auth{
+    padding: 8px 16px;
+    border-radius: 15px;
+    background-color: #9CC4B2;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 20px;
+}
+.auth:hover{
+    background-color: #fff;
+    color: black;
+    transform: scale(1.2);
+}
+.links{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E0E0E0;
+}
+
+@media (max-width: 718px) {
+    .links {
+        display: none; 
+    }
+    .auth{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .dropdown select{
+        padding: 2px 8px;
+        font-size: 15px;
+    }
+    .dropdown select option {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .header {
+        padding: 10px 10px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .dropdown{
+        font-size: 16px;
+    }
+    .auth{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .links{
+        font-size: 16px;
+    }
+}
+@media(max-width: 420px){
+    .auth{
+        display: none;
+    }
+
+}
