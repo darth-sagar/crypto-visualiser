@@ -1,0 +1,35 @@
+.footer{
+    background-color: #53627e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #9CC4B2;
+}
+.footer_class{
+    position: relative;
+}
+.footer_class:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footer_class:hover::after {
+    content: "Dev: Sagar saini"; 
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cdd4e0;
+    color: rgb(34, 31, 31);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+@media (max-width: 718px) {
+    .footer{
+        font-size: 12px;
+    }
+}

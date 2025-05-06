@@ -2,11 +2,9 @@
     background: url("src/assets/b3.jpg");
     background-size: cover;
     background-position: center;
-
 }
-
 .hero-text{
-    min-height: 90vh;
+    min-height: 80vh;
     background-color: hsla(0, 0%, 0%, 0.20);
 }
 .search-input{
@@ -26,6 +24,7 @@
     box-shadow: 0 0 5px rgba(156, 196, 178, 0.5);
     background-color: aliceblue;
     color: black;
+
 }
 .search_button{
     background-color: #9CC4B2;
@@ -39,10 +38,90 @@
     transition: 0.3s ease-in-out;
     position: relative;
     right: 70px;
+    top: 16px;
 }
 .search_button:focus{
     outline: none;
     box-shadow: 0 0 5px rgba(156, 196, 178, 0.5);
     transform: scale(0.95);
     transition: 0.3s ease-in-out;
+}
+.upperbar{
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #9CC4B2;
+    /* margin-top: 50px; */
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    text-align: left;
+    border-radius: 15px;
+}
+.table_values{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    text-align: left;
+    background-color: #261b4b;
+    color: #E0E0E0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #9CC4B2;
+    align-items: center;
+    border: 2px solid #9CC4B2;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+.values{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.274);
+    padding-bottom: 30px;
+}
+@media (max-width: 925px) {
+    .upperbar{
+        font-size: 16px;
+    }
+    .table_values{
+        font-size: 16px;
+    }
+    .table_values p{
+        padding: 0px;
+    }
+    .upperbar p{
+        padding: 0px;
+    }
+
+}
+@media (max-width: 768px) {
+    .upperbar{
+        font-size: 12px;
+        width:95vw;
+    }
+    .table_values{
+        font-size: 12px;
+        width: 95vw;
+    }
+}
+@media(max-width:520px){
+    .hero-text p{
+        font-size: 16px;
+    }
+    .hero-text{
+        min-height: 60vh;
+    }
+    .search-input{
+        width: 200px;
+    }
+    .upperbar{
+        font-size: 10px;
+    }
+    .table_values{
+        font-size: 10px;
+        width: 95vw;
+    }
 }
