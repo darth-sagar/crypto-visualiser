@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header/Header'
 import { Routes,Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
+import Home from './pages/Home/home'
 import Coin from './pages/Coin/Coin'
 import Footer from './components/Footer/Footer'
 

@@ -23,14 +23,12 @@ const CoinContextProvider = (props) => {
             .catch(err => console.error(err));
     }
 
-    useEffect(() => {fetchCoins();},[currency])
+    useEffect(() => {fetchCoins()},[currency])
 
     const coinData = {
         allCoins,
         currency,
-        setcurrency
-        
-
+        setcurrency,
     };
 
     return (

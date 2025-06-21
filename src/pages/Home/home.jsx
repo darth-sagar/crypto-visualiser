@@ -3,35 +3,34 @@ import './Home.css'
 import { useContext } from 'react'
 import { CoinContext } from '../../context/CoinContext'
 import { useState } from 'react'
-// import { useRef } from 'react'
 
 const Home = () => {
+
   const {allCoins,currency} = useContext(CoinContext);
   const [displayCoins, setDisplayCoins] = useState([]);
   const [input, setInput] = useState("");
 
   const inputhandler=(event)=>{
-    console.log(event.target.value)
-    setInput(event.target.value);
-
+    const value = event.target.value;
+    console.log(value);
+    setInput(value);
   }
 
   const searchhandler= async (event)=>{
     event.preventDefault();
     const coins = await allCoins.filter((item)=>{
-      return item.name.toLowerCase().includes(inputValue.toLowerCase())
+      return item.name.toLowerCase().includes(input.toLowerCase())
     })
     setDisplayCoins(coins);
   }
 
-  
-
-  useEffect(() => {setDisplayCoins(allCoins);}, [allCoins])
-  
-
+  useEffect(() => {
+    setDisplayCoins(allCoins);},
+      [allCoins]
+  )
 
   return (
-    
+
     <div>
       <div className="hero-page">
         <div className="hero-text flex flex-col items-center justify-center">
@@ -62,12 +61,10 @@ const Home = () => {
                 <p>{currency.symbol}{item.current_price.toLocaleString()}</p>
                 <p style={{color:item.price_change_percentage_24h<0?"#FB4141":"#5CB338"}}>{Math.floor(item.price_change_percentage_24h*100)/100}%</p>
                 <p style={{paddingRight:"20px"}}>{currency.symbol}{item.market_cap.toLocaleString()}</p>
-
               </div>
             ))
           }
         </div>
-        
       </div>
     </div>
   )
