@@ -3,6 +3,7 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import { useContext } from 'react'
 import { CoinContext } from '../../context/CoinContext'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
 
@@ -41,15 +42,17 @@ const Header = () => {
     <div className='header flex items-center justify-between shadow-md '>
 
         <div className='logo flex items-center justify-center'>
-            <img src={logo} alt="" className='w-11'/>
-            <h3 className='name'>VizCrypto</h3>
+            <Link to={'/'}>
+                <img src={logo} alt="" className='w-10'/>
+            </Link>
+            <h4 className='name'>VizCrypto</h4>
         </div>
         <div className='header-links flex items-center justify-between'>
             <div className='links flex items-center justify-center'>
-                <a href="/home">Home</a>
-                <a href="/about">Features</a>
-                <a href="/contact">Market</a>
-                <a href="/about">Blog</a>
+                <Link to={'/'} >Home</Link>
+                <Link to="/about">Features</Link>
+                <Link to="/contact">Market</Link>
+                <Link to="/about">Blog</Link>
             </div>
             <div className="dropdown flex items-center ">
                 <select name="" id="" onChange={handleChange} >
