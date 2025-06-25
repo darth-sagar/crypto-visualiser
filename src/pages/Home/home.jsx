@@ -25,7 +25,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    setDisplayCoins(allCoins);},
+    setDisplayCoins(allCoins)},
       [allCoins]
   )
 

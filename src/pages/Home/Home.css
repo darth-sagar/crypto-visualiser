@@ -17,15 +17,6 @@
     width: 300px;
     
 }
-.search-input:focus{
-    outline: none;
-    border: 2px solid #9CC4B2;
-    border-radius: 2rem;
-    box-shadow: 0 0 5px rgba(156, 196, 178, 0.5);
-    background-color: aliceblue;
-    color: black;
-
-}
 .search_button{
     background-color: #9CC4B2;
     color: black;
