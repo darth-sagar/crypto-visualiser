@@ -122,35 +122,12 @@ The application uses a combination of:
 - **Custom CSS**: For component-specific styles and animations
 - **Responsive Design**: Mobile-first approach ensuring compatibility across devices
 
-## 🚦 Getting Started for Developers
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn package manager
-
-### Development Setup
-
-1. Fork and clone the repository
-2. Install dependencies with `npm install`
-3. Start the development server with `npm run dev`
-4. Make your changes and test thoroughly
-5. Build for production with `npm run build`
-
-### Contributing
-
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+## Screenshots
+### Screenshot
+![Browser Extension Screenshot](src/assets/s1.png)
+![Browser Extension Screenshot](/src/assets/s2.png)
+![Browser Extension Screenshot](src/assets/s1.png)
+![Browser Extension Screenshot](/src/assets/s2.png)
 
 
 For questions, suggestions, or support, please reach out:
