@@ -125,10 +125,10 @@ The application uses a combination of:
 ## Screenshots
 ### Screenshot
 ![Browser Extension Screenshot](src/assets/s1.png)
-![Browser Extension Screenshot](/src/assets/s2.png)
-![Browser Extension Screenshot](src/assets/s1.png)
-![Browser Extension Screenshot](/src/assets/s2.png)
-
+![Browser Extension Screenshot](/src/assets/s3.png)
+![Browser Extension Screenshot](src/assets/s2.png)
+![Browser Extension Screenshot](/src/assets/s4.png)
+![Browser Extension Screenshot](/src/assets/s5.png)
 
 For questions, suggestions, or support, please reach out:
 
