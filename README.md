@@ -49,9 +49,6 @@ VizCrypto is a modern, responsive cryptocurrency tracking and visualization web 
    npm run dev
    ```
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the application
-
 ## 🎯 Usage
 
 ### Home Page
