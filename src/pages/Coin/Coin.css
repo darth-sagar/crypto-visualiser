@@ -23,3 +23,13 @@
         transform: rotate(360deg);
     }
 }
+.chart{
+    width: 70vw;
+    margin: 0 auto;
+}
+@media(max-width:520px){
+    .chart{
+        min-height: 50vh;
+        width: 95vw;
+    }
+}

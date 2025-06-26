@@ -44,7 +44,9 @@ const Coin = () => {
             <ul >24 Hour Low - {currency.symbol} {coindata.market_data.low_24h[currency.name.toLowerCase()].toLocaleString()}</ul>
             <ul>Current Market Cap - {currency.symbol} {coindata.market_data.market_cap[currency.name.toLowerCase()].toLocaleString()}</ul>
             <ul className={"mb-8.5"}>Totol Volume - {currency.symbol} {coindata.market_data.total_volume[currency.name.toLowerCase()].toLocaleString()}</ul>
-            <LineChart chartData={chartData}/>
+            <div className={"chart"}>
+              <LineChart chartData={chartData}/>
+            </div>
             <div className={'mb-10'}></div>
           </div>
         </div>

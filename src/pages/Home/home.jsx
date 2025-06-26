@@ -68,7 +68,7 @@ const Home = () => {
                 <p style={{padding:"0px 24px"}}>{item.market_cap_rank}</p>
                 <div className="coin flex items-center justify-start">
                   <img src={item.image} alt="" className='w-10 h-10' />
-                  <p className={'pl-2'}>{item.name}</p>
+                  <p className={'ml-1'}>{item.name}</p>
                 </div>
                 <p>{currency.symbol}{item.current_price.toLocaleString()}</p>
                 <p style={{color:item.price_change_percentage_24h<0?"#FB4141":"#5CB338"}}>{Math.floor(item.price_change_percentage_24h*100)/100}%</p>

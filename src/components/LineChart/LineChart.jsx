@@ -19,7 +19,6 @@ const LineChart = ({chartData }) => {
             chartType="LineChart"
             data={data}
             height="50vh"
-            width={"70vw"}
             leagendToggle
         />
     )
