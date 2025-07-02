@@ -6,7 +6,7 @@ VizCrypto is a modern, responsive cryptocurrency tracking and visualization web 
 ## 🚀 Features
 
 - **Real-time Market Data**: Live cryptocurrency prices and market information powered by CoinGecko API
-- **Interactive Charts**: Visualize price trends over the last 20 days with Google Charts integration
+- **Interactive Charts**: Visualize price trends over the last 10 days with Google Charts integration
 - **Multi-Currency Support**: View prices in USD, EUR, and INR
 - **Search Functionality**: Quick search and filter through hundreds of cryptocurrencies
 - **Responsive Design**: Mobile-first design with Tailwind CSS for optimal viewing on all devices
